@@ -1,0 +1,75 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# TypeScript related
+.tsbuildinfo
+*.tsbuildinfo
+
+# Build artifacts
+dist/
+build/
+out/
+lib/
+docs/
+
+# IDE and Editor related files
+.vscode/
+.idea/
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.csproj
+**/*.vbproj
+**/*.dbproj
+**/*.pidb
+**/*.sdf
+**/*.opensdf
+**/*.vssscc
+**/*.VC.db
+**/*.DS_Store
+**/Thumbs.db
+**/*.sublime-workspace
+
+# Ignore all logfiles and tempfiles
+*.log
+*.log.*
+*.tmp
+*.temp
+*.swp
+.DS_Store
+
+# Ignore gulp, grunt, and related files
+.gulp/
+.grunt/
+gulpfile.js
+gruntfile.js
+jenkinsfile
+
+# Miscellaneous
+.env
+.env.*
+README.md.swp
+coverage/
+reports/
+test-results.xml
+
+# Specific to Web Components
+webcomponents.js
+webcomponents-loader.js
+
+# Custom elements polyfill
+custom-elements-es5-adapter.js
+
+# Bower dependencies (if used)
+bower_components/
+
+# Webpack, Rollup, or other bundler artifacts
+webpack.config.js
+rollup.config.js
+dist/*
