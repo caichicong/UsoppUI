@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dialog</title>
+</head>
+<body>
+  <!-- 基本使用 -->
+  <u-dialog>
+    <span slot="title">提示</span>
+    <p>这是一个对话框内容</p>
+  </u-dialog>
+  <script type="module">
+      import UsoppDialog from './../packages/dialog/dialog.js';
+      class MyDialog extends UsoppDialog {}
+      customElements.define('u-dialog', MyDialog);
+  </script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const myDialog = document.querySelector('u-dialog');
+
+      // 显示对话框
+        myDialog.show();
+
+      // 隐藏对话框
+      // dialog.hide(); // 根据需要调用
+
+      // 监听确认事件
+        myDialog.addEventListener('confirm', () => {
+        console.log('确认按钮被点击');
+      });
+    });
+  </script>
+
+</body>
+</html>
